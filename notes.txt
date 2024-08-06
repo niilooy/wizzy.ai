@@ -1,0 +1,23 @@
+nvm these are for my reference because I tend to forget stuff...
+
+Clerk for authentication
+
+Next nested routes nothing fancy here
+
+Gemini API ez pz
+
+Then new thing learnt is prisma
+
+Prisma Setup:
+1. Setup an online sql db like Neon db that offers postgresql db.
+2. then install prisma
+3. init prisma and define the schema in schema.prisma 
+4. then generate!
+5. finally push.
+
+Stripe API:
+1. intergration is ez
+2. webhooks is a bit difficult
+3. launch github local.. login to Stripe
+4. send a demo request ...then you'll get your webhook key!
+5. need to generate new webhook key every 90 days.
