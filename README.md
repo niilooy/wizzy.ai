@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Wizzy.ai
 
-## Getting Started
+Wizzy.ai is a powerful SaaS platform that leverages Artificial Intelligence to provide a wide array of content generation templates, boosting productivity for creators and businesses alike.
 
-First, run the development server:
+## ✨ Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- 🔐 **Secure Authentication**: Robust sign-in process powered by Clerk Authentication.
+- 📄 **Diverse Templates**: A plethora of AI-powered templates to supercharge your content creation.
+- 📊 **Comprehensive Content History**: Detailed tracking of all generated content for each user.
+- 💳 **Flexible Credit System**: Purchase additional credits to expand your content generation capabilities.
+- 🛡️ **Secure Payments**: Seamless and safe credit purchases via Stripe Payment Gateway.
+- 📱 **Responsive Design**: Optimized user experience across all devices.
+
+## Demo
+
+### Dashboard
+https://github.com/user-attachments/assets/3370d44f-b752-41b7-a40f-f151be00208d
+
+### Content Generation and History
+https://github.com/user-attachments/assets/8a12c80f-27ca-4474-a0c8-2e1b58b6cb2d
+
+### Purchasing Credits
+https://github.com/user-attachments/assets/64c88d24-5b27-4a2b-967b-945b420215c9
+
+### Mobile Responsive UI
+https://github.com/user-attachments/assets/5ad11491-281d-4713-abf6-7d7d73539c82
+
+
+
+## 🌍 Environment Variables
+Create a .env.local in the root directory with the following structure:
+```.env.local
+# Database
+DATABASE_URL="your_database_connection_string"
+
+# Authentication (Clerk)
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+CLERK_SECRET_KEY=your_clerk_secret_key
+
+# Stripe
+STRIPE_SECRET_KEY=your_stripe_secret_key
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=your_stripe_publishable_key
+STRIPE_WEBHOOK_SECRET=your_stripe_webhook_secret
+
+# Application
+NEXT_PUBLIC_APP_URL=http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Feel free to try the app here:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+[wizzy.ai](https://wizzy-ai.vercel.app)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
